@@ -1,7 +1,7 @@
 
 # Results — Business Impact (Questions 4, 5, 6)
 
-## Q4. Repeat Buyers by Price Buckets
+## Q1. Repeat Buyers by Price Buckets
 **Method:** Users with >1 rows in dataset treated as repeat buyers. Primary price bucket = user's most frequent bucket.
 **Key Results:**
 price_bucket  users  repeat_rate_pct
@@ -19,7 +19,7 @@ price_bucket  users  repeat_rate_pct
 - Create **VIP retention** flows for the bucket(s) with highest repeat_rate.
 - For low-price buckets, trigger **post-purchase bundles** and **win-back coupons** in 7–14 days.
 
-## Q5. Potential Churn Signals (Proxy)
+## Q2. Potential Churn Signals (Proxy)
 **Definition:** Single-purchase users with discounted purchase and average price ≤ ₹500.
 **Flagged potential churn users:** **355**
 - Exported file: `potential_churn_users.csv` for CRM targeting.
@@ -28,7 +28,7 @@ price_bucket  users  repeat_rate_pct
 - Send **personalized win-back** emails (₹50–₹100 coupon, free shipping).
 - Recommend **complementary low-cost accessories** matching last category purchased.
 
-## Q6. Seasonality
+## Q3. Seasonality
 No date column found — seasonality analysis not possible.
 
 **If you want seasonality:** Add a column like `order_date` or `review_date` (YYYY-MM-DD). Then re-run the notebook section 6.
